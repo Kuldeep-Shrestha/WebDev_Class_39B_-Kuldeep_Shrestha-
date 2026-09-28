@@ -1,0 +1,288 @@
+#home h1{
+    text-align: center;
+}
+#home h2{
+    text-align: center;
+}
+
+nav {
+    display: flex;              
+    flex-wrap: nowrap;          
+    justify-content: center;    
+    align-items: center;        
+    gap: 30px;                          
+}
+
+#home{
+    background-color: skyblue;
+}
+
+
+#Introduction h1 {
+    text-align: left;          
+}
+
+
+#Introduction p {
+    text-align: justify ;
+}
+
+#Introduction figure {
+    text-align: center;  
+    margin-top: 30px;
+}
+
+
+#Introduction img {
+    border-radius: 22px;
+}
+
+
+section {
+    border-radius: 18px;    
+}
+
+
+#Experience ol > li:nth-child(odd) {
+    font-weight: 300;  
+}
+
+
+#Experience ol > li:nth-child(even) {
+    font-weight: 700;   
+}
+
+#Skills table {
+    border: 2px solid #14213d;
+    width: 100%;
+    border-spacing: 0;
+    font-size: 0.98rem;
+    border-radius: 14px;
+}
+#Skills thead th {
+    background: linear-gradient(135deg, #14213d, #1f3a63);
+    color: #ffffff;
+    text-align: left;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    font-weight: 700;
+    padding: 16px 20px;
+}
+
+#Skills thead th:first-child {
+    border-top-left-radius: 14px;
+}
+
+#Skills thead th:last-child {
+    border-top-right-radius: 14px;
+    text-align: center;       
+}
+
+#Skills tbody td {
+    padding: 13px 20px;
+}
+
+
+#Skills tbody td:last-child {
+    text-align: center;
+    font-weight: 700;
+    width: 130px;
+}
+
+#Skills tbody tr:nth-child(even) {
+    background-color: #f7f9fd;  
+}
+
+#Skills tbody tr:nth-child(odd) {
+    background-color: #ffffff;
+}
+
+
+#Skills tbody tr:hover {
+    background-color: #fdf1dc;  
+}
+
+#Projects ul {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 22px;             
+}
+#Projects li {
+    background: linear-gradient(160deg, #ffffff 0%, #f2f6fd 100%);
+    border: 1px solid #e0e5f0;
+    border-top: 4px solid #fca311;   
+    border-radius: 16px;
+    padding: 24px 22px 20px;
+    transition: transform 0.28s ease,
+                box-shadow 0.28s ease,
+                border-color 0.28s ease;
+}
+#Projects li:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 16px 30px rgba(20, 33, 61, 0.18);
+    border-color: #fca311;
+}
+.project-title {
+    display: block;          
+    font-size: 1.08rem;
+    font-weight: 700;
+    color: #14213d;        
+    line-height: 1.4;
+}
+.project-meta {
+    display: block;
+    font-size: 0.82rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: #fca311;          
+    margin: 6px 0 10px;
+}
+#Projects li p {
+    font-size: 0.95rem;
+    color: #5c6784;        
+    text-align: justify;
+    line-height: 1.65;
+}
+
+.video-wrap {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 0 18px;
+    text-align: center;
+}
+
+.video-wrap iframe {
+    display: block;
+    width: 100%;
+    max-width: 800px;
+    aspect-ratio: 16 / 9;
+    height: auto;
+    margin: 0 auto;
+    border: 0;
+    border-radius: 18px;
+    box-shadow: 0 12px 30px rgba(20, 33, 61, 0.25);
+    background-color: #000;
+}
+
+@media (max-width: 640px) {
+    .video-wrap iframe {
+        border-radius: 12px;
+    }
+}
+
+
+#Contact h1 {
+    text-align: center;
+}
+
+#Contact form {
+    max-width: 620px;
+    margin: 0 auto;
+    display: grid;
+    gap: 20px;
+    text-align: left;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.form-group label,
+.form-group legend {
+    font-size: 0.93rem;
+    font-weight: 700;
+    color: #14213d;
+    letter-spacing: 0.3px;
+}
+
+
+#Contact input[type="text"],
+#Contact input[type="email"],
+#Contact input[type="tel"],
+#Contact select {
+    width: 100%;
+    padding: 13px 15px;
+    font-family: inherit;
+    font-size: 0.97rem;
+    color: #22223b;
+    background-color: #fbfcfe;
+    border: 1.5px solid #cfd6e4;
+    border-radius: 11px;
+    transition: border-color 0.25s ease,
+                box-shadow 0.25s ease,
+                background-color 0.25s ease;
+}
+
+#Contact input::placeholder { color: #9aa4bb; }
+
+#Contact input:focus,
+#Contact select:focus {
+    outline: none;
+    background-color: #ffffff;
+    border-color: #14213d;
+    box-shadow: 0 0 0 4px rgba(20, 33, 61, 0.12);
+}
+
+
+#Contact fieldset {
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+.radio-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px 28px;
+    padding: 6px 0 2px;
+}
+
+.radio-group label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: 500;
+    color: #22223b;
+    cursor: pointer;
+    font-size: 0.95rem;
+}
+
+.radio-group input[type="radio"] {
+    width: 17px;
+    height: 17px;
+    accent-color: #14213d;    
+    cursor: pointer;
+}
+
+
+#Contact button[type="submit"] {
+    margin-top: 6px;
+    padding: 15px 20px;
+    font-family: inherit;
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: #ffffff;
+    background: linear-gradient(135deg, #14213d, #1f3a63);
+    border: none;
+    border-radius: 11px;
+    cursor: pointer;
+    transition: transform 0.2s ease,
+                box-shadow 0.25s ease,
+                background 0.3s ease;
+}
+
+#Contact button[type="submit"]:hover {
+    background: linear-gradient(135deg, #fca311, #e08c00);
+    color: #14213d;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 22px rgba(252, 163, 17, 0.40);
+}
+
+#Contact button[type="submit"]:active {
+    transform: translateY(0);
+}
